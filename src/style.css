@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #d5d5d5;
+}
+
+b{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =====================navbar====================== */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .2rem;
+    height: 2.5rem;
+    background: #fff;
+    margin-bottom: .3rem;
+}
+
+/* ==============================nav-left================ */
+
+.navbar .nav-left{
+    display: flex;
+    margin: 0 .3rem;
+}
+
+.navbar .nav-left .list-container{
+    display:  flex;
+    list-style: none;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.navbar .nav-left .list-container .list-items{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar .nav-left .list-container .list-items .items{
+    padding: .3rem;
+    text-decoration: none;
+    color: black;
+    transition: ease;
+}
+
+.navbar .nav-left .list-container .list-items:hover{
+    background: cornflowerblue;
+    cursor: pointer;
+}
+
+.navbar .nav-left .list-container .list-items:hover .items{
+    color: white;
+}
+
+.navbar .nav-left .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.navbar .nav-left .list-container>*{
+    margin: 0 .3rem;
+}
+
+/* ===================nav-right===================== */
+
+.navbar .nav-right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =======================sidebar================================= */
+
+.sidebar{
+    background: #a6afdf;
+    width: 20%;
+    padding: 0 .2rem;
+}
+
+.sidebar .side-heading{
+    margin: .3rem;
+    padding: .5rem 0;
+}
+
+.sidebar .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    border-radius: .25em;
+    background: #fff;
+    
+}
+
+.sidebar .search .search-patient{
+    width: 87%;
+    outline: none;
+    border: none;
+    padding: .2rem 0;
+}
+
+.side-list-container{
+    display: flex;
+    margin: 1rem auto;
+    background: #fff;
+    border-radius: .25em;
+    padding: 1rem .25rem;
+}
+
+.side-list-container .image-container img{
+    width: 2rem;
+}
+
+.side-list-container .details-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto 1rem;
+}
+.side-list-container .details-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-list-container .patient-status{
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+
+}
