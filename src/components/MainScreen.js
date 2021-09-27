@@ -47,7 +47,8 @@ const rows = [
     anesthesiaType: 'Genral "Breathing Tube"',
     surgicalComplications: 'No',
     anesthesiaComplications: 'No'
-  }
+  },
+  
 ];
 
 const useStyles = makeStyles((theme) => ({
@@ -225,6 +226,7 @@ export const MainScreen = ({patient}) => {
                       </div>
                     
                     </div>
+                    {/* doctor details */}
                     <div className={classes.doctorDetails}>
                       <div className={classes.listItem}>
                         <Typography className={classes.listTitle} variant="p">Anesthesiologist</Typography>
@@ -239,6 +241,9 @@ export const MainScreen = ({patient}) => {
                           <Typography variant="p"><b>{user.anesthesiologistEmail}</b></Typography>
                         </div>
                     </div>
+
+
+
                     <div className={classes.surgery}>
                       <Typography>Surgery Clearance</Typography>
                       <div className={`${user.sugeryClearance ? classes.yes : classes.no} `}><Typography className={classes.center}>{user.sugeryClearance ? 'YES' : 'No'}</Typography></div>
